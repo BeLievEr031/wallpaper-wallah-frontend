@@ -26,8 +26,8 @@ function Home() {
                     <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
                 </ContentGrid>
 
-                <Footer />
             </Container>
+            <Footer />
         </div>
     )
 }
