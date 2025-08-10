@@ -3,7 +3,7 @@ import Container from "./Container"
 
 function Footer() {
     return (
-        <div className="mt-16 pt-2 font-rubik border-t-2">
+        <div className="mt-16 py-2 font-rubik border-t-2">
             <Container>
                 <h1 className="text-3xl font-semibold font-rubik text-zinc-900 capitalize">Explore other wallpaper categories</h1>
 
