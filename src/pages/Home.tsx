@@ -1,15 +1,11 @@
 import WallpaperImg from "../assets/wallpaper.jpeg"
 import CategoryImg from "../assets/category.jpeg"
 import NatureImg from "../assets/nature.jpeg"
+import Navbar from "../components/Navbar"
 function Home() {
     return (
         <div className="min-h-screen">
-            <div className="flex justify-between items-center py-4 border-b px-20">
-                <h1 className="text-3xl font-bold font-rubik text-blue-700">Wallpaper Wallah</h1>
-                <button className="px-6 py-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg transition-all duration-200">
-                    Explore
-                </button>
-            </div>
+            <Navbar />
             <div className="px-20">
                 <div className="grid grid-cols-[3fr_1fr] pt-11 font-roboto">
                     <div className="">
