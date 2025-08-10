@@ -2,6 +2,9 @@ import WallpaperImg from "../assets/wallpaper.jpeg"
 import CategoryImg from "../assets/category.jpeg"
 import NatureImg from "../assets/nature.jpeg"
 import Navbar from "../components/Navbar"
+import PopularCategoryCard from "../components/PopularCategoryCard"
+import ContentGrid from "../components/ContentGrid"
+import Image from "../components/Image"
 function Home() {
     return (
         <div className="min-h-screen">
@@ -42,149 +45,14 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="pt-16">
-                    <h1 className="text-2xl font-semibold font-rubik text-zinc-900 capitalize">Most Popular Wallpapers</h1>
-                    <div className="grid grid-cols-8 mt-5 gap-2">
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                        <img src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
-                    </div>
-                </div>
+                <ContentGrid gridTitle="Most Popular Wallpapers">
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                </ContentGrid>
 
-
-                <div className="pt-16">
-                    <h1 className="text-2xl font-semibold font-rubik text-zinc-900 capitalize">Most Popular Categories</h1>
-                    <div className="grid grid-cols-8 mt-5 gap-2">
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={CategoryImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Anime</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                        <div className="relative rounded-md overflow-hidden">
-                            <img src={NatureImg} alt="WallpaperImg" className="object-cover" />
-                            <h1 className="absolute left-2 bottom-2 font-semibold text-2xl z-[9999999] text-white [-webkit-text-stroke:0.5px_black]">Nature</h1>
-                            <div className="absolute top-0 left-0 w-full h-full bg-black/20">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <ContentGrid gridTitle="Most Popular Categories">
+                    <PopularCategoryCard imgSrc={CategoryImg} name="Anime" />
+                </ContentGrid>
             </div>
-
 
         </div>
     )
