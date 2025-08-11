@@ -15,8 +15,18 @@ function Home() {
                 <Hero />
                 <ContentGrid gridTitle="Most Popular Wallpapers">
                     <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
+                    <Image src={WallpaperImg} alt="WallpaperImg" className="rounded-md" />
                 </ContentGrid>
                 <ContentGrid gridTitle="Most Popular Categories">
+                    <PopularCategoryCard imgSrc={CategoryImg} name="Anime" />
+                    <PopularCategoryCard imgSrc={CategoryImg} name="Anime" />
                     <PopularCategoryCard imgSrc={CategoryImg} name="Anime" />
                     <PopularCategoryCard imgSrc={CategoryImg} name="Anime" />
                 </ContentGrid>
