@@ -7,7 +7,7 @@ interface IProp {
 }
 function Container({ className, children }: IProp) {
     return (
-        <div className={clsx("px-20", className)}>
+        <div className={clsx("px-4 md:px-20", className)}>
             {children}
         </div>
     )
