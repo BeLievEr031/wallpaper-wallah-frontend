@@ -7,9 +7,9 @@ function ViewWallpaper() {
     return (
         <div>
             <Container>
-                <div className="grid grid-cols-[2fr_1fr] mt-5 gap-5">
-                    <div className="flex justify-center bg-white border-1 rounded-md">
-                        <Image src={WallpaperImg} alt="wallpaper" className="w-1/3" />
+                <div className="grid md:grid-cols-[2fr_1fr] mt-5 gap-5">
+                    <div className="flex justify-center bg-white md:border-1 rounded-md">
+                        <Image src={WallpaperImg} alt="wallpaper" className="w-full h-[50vh] md:h-auto object-cover md:w-1/3" />
                     </div>
 
                     <div className="flex flex-col justify-between border py-3 rounded-md px-4">
@@ -25,7 +25,7 @@ function ViewWallpaper() {
                             </div>
                         </div>
 
-                        <div className="flex justify-end">
+                        <div className="flex md:justify-end mt-5 md:mt-0">
                             <button className="px-6 py-2 rounded-sm w-[75%] bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-lg transition-all duration-200 cursor-pointer">
                                 Download
                             </button>
